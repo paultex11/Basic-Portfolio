@@ -1,51 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <div class="container"> 
-       
-        <meta charset="UTF-8">
-        <form id="contact" action="" method="post">
-        <title>My Bio</title>
-
-        <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-                  
-        <h1>Paul Aguilar</h1>
-
-        <h4>About</h4>
-        <h4>Portfolio</h4>
-        <h4>Contact</h4>
-                  
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<!--if you're using IE what is wrong with you?!!-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Paul | Full-Stack Developer</title>
+        <meta name="description" content="practice portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+      
+      <style>
+body {
+    background-color: #dddddd;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
         
-        <h2>Contact</h2>
+</style>
+   
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      
+        <div class = "sticky">
+            <header>
+                <div id = "headerWrapper">
+                    <div id = "mainLogo">Paul Aguilar</div>
+                    <nav id = "menu">
+                        <ul>
+                            <li><a href = "index.html">About</a></li>
+                            <li><a href = "portfolio.html">Portfolio</a></li>
+                            <li><a href = "contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--START OF MAIN CONTENT-->
+            <div id = "mainContentWrapper">
+                <div id = "aboutMeWrapper">
+                    <h1 class = "aboutMe">Contact</h1> 
+                    <form>
+                      
+                        Name<br> 
+                        <input id = "nameBlock" type="text" name="fullName" placeholder="John Smith"><br>
 
-    <form>
-             
-        <strong>Name<br></strong>
-        <textarea name="Name" rows="1"> Name</textarea>
-        </br>
+                        Email<br> 
+                        <input id = "emailBlock" type="text" name="eMail"placeholder="example@gmail.com"><br>
 
-        <br>
+                    </form>
+                    Message<br>
+                    <textarea id = "messageBlock" name="comment" form="usrform">Enter text here...</textarea><br>
+                    <input id = "submitButton" type="submit" value="Submit">
 
-        <strong>Email<br></strong>
-        <textarea name="Email" rows="1"> example@gmail.com</textarea>
-        </br>
+                </div>      
+            </div>
+        </div> <!--END OF STICKY WRAPPER-->
 
-        <br>
-
-        <strong>Messages<br></strong>
-        <textarea name="message" rows="20" cols="187"></textarea>
-        </br> 
-        
-        <br>
-
-        <input type="submit" value="Submit">
-         
-       </form>
-               
-     </div>
-</body>
+        <div id = "outerFooter">
+        <footer>
+            copyright &copy;
+         </footer>
+        </div>
+    </body>
 </html>
