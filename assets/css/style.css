@@ -85,7 +85,7 @@ nav a:active{
 
 
 .aboutMe{
-    border-bottom: 2px solid #666666;
+    border-bottom: 1px solid #666666;
 }
 
 img{
@@ -122,10 +122,15 @@ footer{
 /*-----CONTACT PAGE CSS------*/
 
 #nameBlock,
-#emailBlock,
+#emailBlock {width: 16%;
+  margin-bottom: 8px;
+}
+
 #messageBlock{
     margin-bottom: 10px;
-    width: 90%;
+    width: 99%;
+    height: 200px;
+    
 }
 
 #submitButton{
@@ -214,6 +219,7 @@ img:hover{
     text-align: center;
   
 }
+
 
 
   
